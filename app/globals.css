@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FAF7F1;
+  color: #16233F;
+}
+
+/* visible keyboard focus everywhere */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #AB7D2E;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.hairline {
+  border-color: #DDD4C2;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid #DDD4C2;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.9375rem;
+  color: #16233F;
+}
+
+.input:focus {
+  border-color: #AB7D2E;
+}
